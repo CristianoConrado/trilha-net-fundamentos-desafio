@@ -1,13 +1,11 @@
-using System;
-using System.Collections.Generic;
 namespace DesafioFundamentos.Models;
 public class Estacionamento
 {
-    private decimal
+    private readonly decimal
         _precoInicial = 0,
         _precoPorHora = 0;
     private readonly List<string>
-        _veiculos = [];
+        _veiculos = new List<string>();
     public Estacionamento( decimal precoInicial, decimal precoPorHora )
     {
         _precoInicial = precoInicial;
